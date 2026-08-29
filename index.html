@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@700;800;900&family=Gaegu:wght@700&family=Patrick+Hand+SC&family=Finger+Paint&family=Caveat+Brush&family=Permanent+Marker&family=Kalam:wght@700&family=Caveat:wght@600;700;800&family=Patrick+Hand&family=Comic+Neue:ital,wght@0,700;1,700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Priyanshu Kr. Mahato — Software Engineering & Distributed Systems</title>
+    <meta name="description" content="Priyanshu Kr. Mahato is a Software Engineering student focused on backend-heavy full-stack development, distributed systems, and RESTful API design. Hands-on experience in system design, microservices, and database transaction integrity." />
+    <meta name="keywords" content="Priyanshu Kumar Mahato, Software Engineer, Full Stack Developer, Distributed Systems, Backend Engineer, Node.js, FastAPI, Docker, Redis, PostgreSQL, React, DSCE Bangalore" />
+    <meta name="author" content="Priyanshu Kr. Mahato" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://priyanshu-portfolio.vercel.app/" />
+    <meta property="og:title" content="Priyanshu Kr. Mahato — Software Engineering & Distributed Systems" />
+    <meta property="og:description" content="Software Engineering student focused on backend-heavy full-stack development, distributed systems, and RESTful API design." />
+    <meta property="og:image" content="/priyanshu.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Priyanshu Kr. Mahato — Software Engineering & Distributed Systems" />
+    <meta name="twitter:description" content="Software Engineering student focused on backend-heavy full-stack development, distributed systems, and RESTful API design." />
+    <meta name="twitter:image" content="/priyanshu.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <style>
+      /* Base resets */
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+        scroll-behavior: smooth;
+      }
+      * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Initial theme script */
+    </style>
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('theme');
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#fffcf3] text-[#1a1a1a] dark:bg-[#0a0a0a] dark:text-white transition-colors duration-300 font-Whyte min-h-screen relative overflow-x-hidden selection:bg-[#ff4d00] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
