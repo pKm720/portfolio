@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Server, Cpu, Code2 } from 'lucide-react';
+import { Server, Cpu, Code2, FileText, ArrowUpRight, Sparkles } from 'lucide-react';
 
 export default function About() {
+  const resumeUrl = 'https://drive.google.com/file/d/1GFaBDM0Gf5bhm1Kmly4gK1miLBPFIm4L/view?usp=sharing';
+
   return (
     <section id="about" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[12%] pt-6 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-24 scroll-mt-20">
       {/* Section Header */}
@@ -70,6 +72,26 @@ export default function About() {
             <span className="text-[#ff4d00] font-semibold">Database Transaction Integrity (ACID)</span>. Currently pursuing B.E. in Information Science & Engineering at <strong>Dayananda Sagar College of Engineering, Bangalore</strong> (CGPA: 8.34/10).
           </p>
         </div>
+
+        {/* Resume Action Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href={resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full font-Whyte font-bold text-sm sm:text-base bg-[#1a1a1a] dark:bg-[#fffcf3] text-white dark:text-black hover:bg-[#ff4d00] dark:hover:bg-[#ff4d00] dark:hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+          >
+            <FileText className="w-4 h-4 text-[#ff4d00] group-hover:text-white dark:text-[#ff4d00] dark:group-hover:text-white transition-colors" />
+            <span>View Full Resume (PDF)</span>
+            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+        </motion.div>
       </motion.div>
     </section>
   );

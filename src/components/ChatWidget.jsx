@@ -162,7 +162,15 @@ export default function ChatWidget({ onOpenContact }) {
       };
     }
 
-    // 8. Contact / Hire / Email / Socials
+    // 8. Resume / CV Download
+    if (q.includes('resume') || q.includes('cv') || q.includes('pdf') || q.includes('profile')) {
+      return {
+        text: "📄 **Priyanshu's Resume**:\n\nYou can view and download his complete 2026 Software Engineering Resume (PDF) directly via Google Drive:\n\n🔗 [View Full Resume on Google Drive](https://drive.google.com/file/d/1GFaBDM0Gf5bhm1Kmly4gK1miLBPFIm4L/view?usp=sharing)\n\nFeel free to ask if you'd like a summary of his education, top projects, or technical skills!",
+        suggestions: ['Top Projects', 'Technical Skills', 'Contact Priyanshu'],
+      };
+    }
+
+    // 9. Contact / Hire / Email / Socials
     if (
       q.includes('contact') ||
       q.includes('email') ||
