@@ -336,7 +336,7 @@ export default function Hero({ onOpenContact }) {
   );
 
   return (
-    <section id="top" className="relative w-full min-h-screen overflow-hidden flex flex-col justify-start sm:justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[8%] pt-28 sm:pt-32 md:pt-28 pb-12 sm:pb-16">
+    <section id="top" className="relative w-full min-h-fit md:min-h-screen overflow-hidden flex flex-col justify-center px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[8%] pt-20 sm:pt-28 md:pt-24 pb-8 sm:pb-12 md:pb-16">
       {/* Preloaded AC/DC Audio Element */}
       <audio ref={audioRef} src={backInBlackAudio} preload="auto" />
       {/* Background radial glow */}

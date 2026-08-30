@@ -4,7 +4,7 @@ import { Server, Cpu, Code2 } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[12%] py-16 md:py-24 scroll-mt-20">
+    <section id="about" className="w-full px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[12%] pt-6 sm:pt-12 md:pt-16 pb-12 sm:pb-16 md:pb-24 scroll-mt-20">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
